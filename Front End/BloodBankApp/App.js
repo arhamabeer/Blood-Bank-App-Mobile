@@ -6,18 +6,20 @@ import {
   StyleSheet,
   Dimensions,
 } from 'react-native';
+import Navigator from './src/config/navigation';
 const BgImg = require('./src/assets/bg-blood.jpg');
+import Login from './src/screens/login';
 
 function App() {
   return (
     <View>
       <ImageBackground source={BgImg} style={styles.bgImg} resizeMode="cover">
-        <Text>Hello Peter...</Text>
+        <Navigator />
       </ImageBackground>
     </View>
   );
 }
-const styles = StyleSheet.create({npm install @react-navigation/native-stack
+const styles = StyleSheet.create({
   bgImg: {
     width: Dimensions.get('screen').width,
     height: '100%',
