@@ -18,7 +18,7 @@ import {
   Divider,
 } from 'native-base';
 
-export default function App() {
+export default function SignUp() {
   return (
     <NativeBaseProvider>
       <ImageBackground source={BgImg} style={styles.bgImg} resizeMode="cover">
