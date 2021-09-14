@@ -18,7 +18,7 @@ import {
   Divider,
 } from 'native-base';
 
-export default function App() {
+export default function Login(){
   return (
     <NativeBaseProvider>
       <ImageBackground source={BgImg} style={styles.bgImg} resizeMode="cover">
@@ -54,8 +54,8 @@ export default function App() {
             <VStack space={2}>
               <Button
                 colorScheme="rgb(196, 56, 51)"
-                border="3px solid"
-                _text={{color: 'white'}}>
+                border="3px solid red"
+                _text={{color: 'wheat'}}>
                 Login
               </Button>
 
