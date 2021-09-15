@@ -1,0 +1,20 @@
+import React from 'react';
+import {Input, Center, NativeBaseProvider} from 'native-base';
+export const InputName = () => {
+  return (
+    <NativeBaseProvider>
+      <Input
+        minWidth={400}
+        mx={3}
+        placeholder="Enter Full Name"
+        color="wheat"
+        _light={{
+          placeholderTextColor: 'blueGray.400',
+        }}
+        _dark={{
+          placeholderTextColor: 'blueGray.50',
+        }}
+      />
+    </NativeBaseProvider>
+  );
+};
