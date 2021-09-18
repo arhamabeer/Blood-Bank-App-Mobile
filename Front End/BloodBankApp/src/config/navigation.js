@@ -5,6 +5,7 @@ import Login from '../screens/login';
 import SignUp from '../screens/signup';
 import Register from '../screens/register';
 import Home from '../screens/home';
+import Donor from '../screens/donor';
 
 
 const Stack = createNativeStackNavigator();
@@ -13,6 +14,7 @@ export default function Navigator() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        <Stack.Screen name="Donor" component={Donor} />
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Register" component={Register} />
         <Stack.Screen name="SignUp" component={SignUp} />
