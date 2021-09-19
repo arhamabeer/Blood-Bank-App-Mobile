@@ -4,13 +4,13 @@ import {Text} from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import {colorStyle} from 'styled-system';
 
-export default function CardDonor() {
+export default function CardSeeker() {
   return (
     <NativeBaseProvider>
       <Box
         bgColor="rgba(247, 91, 84,0.28)"
-        borderBottomColor="green.700"
-        borderTopColor="green.700"
+        borderBottomColor="red.700"
+        borderTopColor="red.700"
         w={96}
         px={12}
         mb={4}
@@ -39,7 +39,7 @@ export default function CardDonor() {
                 textAlign: 'center',
                 paddingBottom: 12,
               }}>
-              Blood Donor
+              Blood Seeker
             </Text>
             <Text style={{fontSize: 14, color: 'wheat', textAlign: 'center'}}>
               click for more info
