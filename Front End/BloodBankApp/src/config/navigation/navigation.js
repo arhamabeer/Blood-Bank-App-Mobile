@@ -16,8 +16,8 @@ export default function Navigator() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Donor" component={Donor} />
-        <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="UserProfile" component={UserProfile} />
+        <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Seeker" component={Seeker} />
         <Stack.Screen name="Register" component={Register} />
         <Stack.Screen name="SignUp" component={SignUp} />
