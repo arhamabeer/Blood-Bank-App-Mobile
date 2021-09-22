@@ -4,21 +4,21 @@ import {Text} from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import {colorStyle} from 'styled-system';
 
-export default function CardDonor() {
+export default function CardDonor({purpose, clr, item}) {
   return (
     <NativeBaseProvider>
       <Box
         bgColor="rgba(247, 91, 84,0.28)"
-        borderBottomColor="green.700"
-        borderTopColor="green.700"
+        borderBottomColor={clr}
+        borderTopColor={clr}
         w={96}
         px={12}
         mb={4}
         p={6}
         border={3}
-        borderTopWidth={5}
-        borderBottomWidth={5}
-        borderRadius="md">
+        borderTopWidth={7}
+        borderBottomWidth={7}
+        borderRadius={25}>
         <VStack space={5}>
           <Box px={12} pt={0}>
             <Text
@@ -28,7 +28,7 @@ export default function CardDonor() {
                 fontWeight: 'bold',
                 textAlign: 'center',
               }}>
-              Arham Abeer
+              {item.fname}
             </Text>
           </Box>
           <Box px={12} pt={0}>
@@ -39,7 +39,7 @@ export default function CardDonor() {
                 textAlign: 'center',
                 paddingBottom: 12,
               }}>
-              Blood Donor
+              Blood {purpose}
             </Text>
             <Text style={{fontSize: 14, color: 'wheat', textAlign: 'center'}}>
               click for more info

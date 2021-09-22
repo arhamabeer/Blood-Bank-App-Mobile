@@ -15,10 +15,10 @@ export default function Navigator() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        <Stack.Screen name="Donor" component={Donor} />
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="UserProfile" component={UserProfile} />
         <Stack.Screen name="Seeker" component={Seeker} />
-        <Stack.Screen name="Donor" component={Donor} />
         <Stack.Screen name="Register" component={Register} />
         <Stack.Screen name="SignUp" component={SignUp} />
         <Stack.Screen name="Login" component={Login} />
