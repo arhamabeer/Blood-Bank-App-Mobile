@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "834042787383",
+    "firebase_url": "https://aaa-blood-bank-default-rtdb.firebaseio.com",
+    "project_id": "aaa-blood-bank",
+    "storage_bucket": "aaa-blood-bank.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834042787383:android:c83d5345acb22b8ac531b2",
+        "android_client_info": {
+          "package_name": "com.blood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834042787383-nr6q8o28jlf3un94qon1ihcic0158b8j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB15QBE5kO2eoV1DtbFw73FOokd9rLbdXQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834042787383-nr6q8o28jlf3un94qon1ihcic0158b8j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

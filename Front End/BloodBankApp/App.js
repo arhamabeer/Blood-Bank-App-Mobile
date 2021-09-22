@@ -6,7 +6,7 @@ import {
   StyleSheet,
   Dimensions,
 } from 'react-native';
-import Navigator from './src/config/navigation';
+import Navigator from './src/config/navigation/navigation';
 const BgImg = require('./src/assets/bg-blood.jpg');
 import Login from './src/screens/login';
 
