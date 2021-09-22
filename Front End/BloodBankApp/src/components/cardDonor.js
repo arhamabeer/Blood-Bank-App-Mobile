@@ -1,10 +1,11 @@
 import React from 'react';
 import {VStack, Box, Divider, NativeBaseProvider} from 'native-base';
-import {Text} from 'react-native';
-import {Colors} from 'react-native/Libraries/NewAppScreen';
-import {colorStyle} from 'styled-system';
+import {Text, StyleSheet, TouchableOpacity} from 'react-native';
 
-export default function CardDonor({purpose, clr, item}) {
+export default function CardDonor({purpose, clr, item, navigation}) {
+  const changeLocation = () => {
+    navigation.navigate('UserProfile', {item: item});
+  };
   return (
     <NativeBaseProvider>
       <Box
@@ -41,12 +42,28 @@ export default function CardDonor({purpose, clr, item}) {
               }}>
               Blood {purpose}
             </Text>
-            <Text style={{fontSize: 14, color: 'wheat', textAlign: 'center'}}>
-              click for more info
-            </Text>
+            <Box px={8}>
+              <TouchableOpacity
+                onPress={() => changeLocation()}
+                style={styles.click}>
+                <Text style={{fontSize: 16, color: 'wheat'}}>
+                  click for more info
+                </Text>
+              </TouchableOpacity>
+            </Box>
           </Box>
         </VStack>
       </Box>
     </NativeBaseProvider>
   );
 }
+const styles = StyleSheet.create({
+  click: {
+    borderWidth: 1,
+    paddingTop: 4,
+    paddingBottom: 4,
+    paddingLeft: 10,
+    borderColor: 'grey',
+    borderRadius: 25,
+  },
+});

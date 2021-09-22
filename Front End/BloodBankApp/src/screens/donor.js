@@ -67,7 +67,14 @@ function Donor(props) {
         <ScrollView style={styles.scrollView}>
           <View style={styles.container}>
             {allUsers.map(val => {
-              return <CardDonor purpose="DONOR" clr="green" item={val} />;
+              return (
+                <CardDonor
+                  purpose="DONOR"
+                  clr="green"
+                  item={val}
+                  navigation={props.navigation}
+                />
+              );
             })}
           </View>
         </ScrollView>
