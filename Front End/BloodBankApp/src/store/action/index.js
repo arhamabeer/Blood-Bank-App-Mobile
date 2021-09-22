@@ -1,5 +1,4 @@
-import Firebase from '../../config/firebase';
-import firebase from 'firebase';
+import database from '@react-native-firebase/database';
 
 const action = {};
 
@@ -59,7 +58,7 @@ action.addUser = (
       // alert("Please fill out all fields.");
       // setDisableBtn(false)
     } else {
-      var key = firebase.database().ref('/').child('users/').push().key;
+      var key = database().ref('/').child('users/').push().key;
       const data = {
         fname: fname,
         wanted: wanted,
@@ -74,7 +73,7 @@ action.addUser = (
       };
 
       // console.log("key>>", data);
-      firebase.database().ref('/users').child(`/${key}`).set(data);
+      database().ref('/users').child(`/${key}`).set(data);
       alert('data sent!');
       hist.push({pathname: '/login'});
     }
@@ -83,7 +82,7 @@ action.addUser = (
 
 // const getFBUsers = () => {
 //   return (dispatch) => {
-//     firebase
+
 //       .database()
 //       .ref("/users")
 //       .on("child_added", (data) => {
@@ -107,8 +106,7 @@ action.getFBUsers = function () {
       type: 'SET_STATE_NULL',
       payload: [],
     });
-    firebase
-      .database()
+    database()
       .ref('/users')
       .on('child_added', data => {
         // console.log(data.val());
@@ -122,7 +120,6 @@ action.getFBUsers = function () {
   };
 
   // let payload = [];
-  // firebase
   //   .database()
   //   .ref("/users")
   //   .on("child_added", (data) => {
