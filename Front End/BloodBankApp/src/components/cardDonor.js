@@ -4,7 +4,7 @@ import {Text, StyleSheet, TouchableOpacity} from 'react-native';
 
 export default function CardDonor({purpose, clr, item, navigation}) {
   const changeLocation = () => {
-    navigation.navigate('UserProfile', {item: item});
+    navigation.navigate('UserProfile', {item: item, clr: clr});
   };
   return (
     <NativeBaseProvider>

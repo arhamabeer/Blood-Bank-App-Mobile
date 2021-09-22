@@ -2,13 +2,13 @@ import React from 'react';
 import {VStack, Box, Divider, NativeBaseProvider} from 'native-base';
 import {Text} from 'react-native';
 
-export default function UserProfInfo({name, value}) {
+export default function UserProfInfo({name, value, clr}) {
   return (
     <NativeBaseProvider>
       <Box
         bgColor="rgba(247, 91, 84,0.28)"
-        borderBottomColor="green"
-        borderTopColor="green"
+        borderBottomColor={clr}
+        borderTopColor={clr}
         w={96}
         // px={0}
         mt={4}

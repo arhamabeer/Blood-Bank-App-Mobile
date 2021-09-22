@@ -5,14 +5,14 @@ const BgImg = require('../assets/bg-blood.jpg');
 
 export default function UserProfile({route}) {
   // console.log('item=>', route.params.item)
-  const {item} = route.params;
+  const {item, clr} = route.params;
   return (
     <ImageBackground source={BgImg} style={styles.bgimg}>
       <View style={styles.container}>
-        <UserProfInfo name="BLOOD GROUP" value={item.bloodGroup} />
-        <UserProfInfo name="GENDER" value={item.gender} />
-        <UserProfInfo name="CITY" value={item.city} />
-        <UserProfInfo name="ADDRESS" value={item.address} />
+        <UserProfInfo name="BLOOD GROUP" value={item.bloodGroup} clr={clr} />
+        <UserProfInfo name="GENDER" value={item.gender} clr={clr} />
+        <UserProfInfo name="CITY" value={item.city} clr={clr} />
+        <UserProfInfo name="ADDRESS" value={item.address} clr={clr} />
       </View>
     </ImageBackground>
   );
